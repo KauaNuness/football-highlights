@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: football-highlights
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/football_highlights
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+app:
+  storage:
+    path: C:/football-highlights
