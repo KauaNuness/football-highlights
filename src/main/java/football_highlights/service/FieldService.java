@@ -14,7 +14,7 @@ public class FieldService {
 
     private final FieldRepository fieldRepository;
 
-    private Field create(FieldRequest request){
+    public Field create(FieldRequest request){
 
         Field field = Field.builder()
                 .name(request.name())
